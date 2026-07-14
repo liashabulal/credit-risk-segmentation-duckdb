@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \".\\\\.venv\\\\Scripts\\\\python.exe\" -c \"import sys; print\\(sys.version\\)\" 2>&1)",
+      "PowerShell(uv pip install --python \".\\\\.venv\\\\Scripts\\\\python.exe\" numpy pandas duckdb kagglehub scikit-learn matplotlib seaborn)"
+    ]
+  }
+}

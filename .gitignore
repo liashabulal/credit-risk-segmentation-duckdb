@@ -1,0 +1,32 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.parquet
+*.db
+*.duckdb
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+data/
+input/
+output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
