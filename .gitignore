@@ -26,6 +26,9 @@ data/
 input/
 output/
 
+# Personal notes (not for the repo)
+interview_prep.md
+
 # OS / editor
 .DS_Store
 Thumbs.db
