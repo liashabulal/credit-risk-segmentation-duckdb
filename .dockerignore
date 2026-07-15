@@ -1,0 +1,30 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Version control
+.git/
+.gitignore
+
+# Python bytecode / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker
+Dockerfile
+.dockerignore
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Notes not needed inside the image
+interview_prep.md

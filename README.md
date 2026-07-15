@@ -35,6 +35,20 @@ The final output combines the SQL risk tier and the model's predicted probabilit
 3. Open `credit-risk-segmentation-duckdb.ipynb` in Jupyter or VS Code.
 4. Run all cells in order, top to bottom. The notebook generates the synthetic data, runs the DuckDB scorecard, trains and evaluates the models, and saves a dashboard image (`credit_risk_dashboard.png`) to the project directory.
 
+## Run with Docker
+
+As an alternative to the manual venv setup above, the project includes a `Dockerfile` that builds a container with all dependencies installed and starts a Jupyter Notebook server.
+
+1. Build the image:
+   ```
+   docker build -t credit-risk-notebook .
+   ```
+2. Run the container:
+   ```
+   docker run -p 8888:8888 credit-risk-notebook
+   ```
+3. Open `http://localhost:8888` in a browser and open `credit-risk-segmentation-duckdb.ipynb`.
+
 ## Optimizations applied
 
 The notebook originally contained a few performance and maintainability issues, documented in detail in `NOTES.md`. The following fixes have been applied:
